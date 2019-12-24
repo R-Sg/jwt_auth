@@ -1,0 +1,19 @@
+{% load static %}
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign</title>
+</head>
+<body>
+<form action="/" method="post">
+    {{url}}
+    {% csrf_token %}
+    Email :
+    <input type="email" name="email"><br><br>
+    Password:
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="SignUp">
+</form>
+</body>
+</html>
